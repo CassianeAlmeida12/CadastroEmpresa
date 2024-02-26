@@ -47,7 +47,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.dataInicioAt = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.capitalSocial = new System.Windows.Forms.TextBox();
             this.estado = new System.Windows.Forms.ComboBox();
@@ -69,6 +68,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.novo = new System.Windows.Forms.Button();
+            this.dataIni = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -87,42 +87,46 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 66);
+            this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(15, 88);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(46, 14);
             this.label2.TabIndex = 1;
             this.label2.Text = "CNPJ:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 104);
+            this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(168, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 13);
+            this.label3.Size = new System.Drawing.Size(95, 14);
             this.label3.TabIndex = 2;
             this.label3.Text = "Razão Social:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 142);
+            this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(13, 130);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 13);
+            this.label4.Size = new System.Drawing.Size(105, 14);
             this.label4.TabIndex = 3;
             this.label4.Text = "Nome Fantasia:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 177);
+            this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(256, 130);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 13);
+            this.label5.Size = new System.Drawing.Size(131, 14);
             this.label5.TabIndex = 4;
             this.label5.Text = "Situação Cadastral:";
             // 
             // cnpj
             // 
-            this.cnpj.Location = new System.Drawing.Point(62, 63);
+            this.cnpj.Location = new System.Drawing.Point(59, 84);
             this.cnpj.Mask = "00,000,000/0000-00";
             this.cnpj.Name = "cnpj";
             this.cnpj.Size = new System.Drawing.Size(104, 20);
@@ -130,14 +134,14 @@
             // 
             // razaoSocial
             // 
-            this.razaoSocial.Location = new System.Drawing.Point(98, 101);
+            this.razaoSocial.Location = new System.Drawing.Point(262, 84);
             this.razaoSocial.Name = "razaoSocial";
             this.razaoSocial.Size = new System.Drawing.Size(126, 20);
             this.razaoSocial.TabIndex = 6;
             // 
             // nomeFantasia
             // 
-            this.nomeFantasia.Location = new System.Drawing.Point(106, 139);
+            this.nomeFantasia.Location = new System.Drawing.Point(118, 127);
             this.nomeFantasia.Name = "nomeFantasia";
             this.nomeFantasia.Size = new System.Drawing.Size(128, 20);
             this.nomeFantasia.TabIndex = 7;
@@ -151,7 +155,7 @@
             "Suspensa",
             "Inapta",
             "Baixada"});
-            this.situacaoCadastral.Location = new System.Drawing.Point(124, 174);
+            this.situacaoCadastral.Location = new System.Drawing.Point(384, 126);
             this.situacaoCadastral.Name = "situacaoCadastral";
             this.situacaoCadastral.Size = new System.Drawing.Size(100, 21);
             this.situacaoCadastral.TabIndex = 8;
@@ -159,9 +163,10 @@
             // SimplesNacional
             // 
             this.SimplesNacional.AutoSize = true;
+            this.SimplesNacional.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SimplesNacional.Location = new System.Drawing.Point(0, 23);
             this.SimplesNacional.Name = "SimplesNacional";
-            this.SimplesNacional.Size = new System.Drawing.Size(106, 17);
+            this.SimplesNacional.Size = new System.Drawing.Size(136, 18);
             this.SimplesNacional.TabIndex = 10;
             this.SimplesNacional.TabStop = true;
             this.SimplesNacional.Text = "Simples Nacional";
@@ -170,9 +175,10 @@
             // LucroPresumido
             // 
             this.LucroPresumido.AutoSize = true;
-            this.LucroPresumido.Location = new System.Drawing.Point(111, 23);
+            this.LucroPresumido.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LucroPresumido.Location = new System.Drawing.Point(137, 22);
             this.LucroPresumido.Name = "LucroPresumido";
-            this.LucroPresumido.Size = new System.Drawing.Size(104, 17);
+            this.LucroPresumido.Size = new System.Drawing.Size(132, 18);
             this.LucroPresumido.TabIndex = 11;
             this.LucroPresumido.TabStop = true;
             this.LucroPresumido.Text = "Lucro Presumido";
@@ -181,9 +187,10 @@
             // Real
             // 
             this.Real.AutoSize = true;
-            this.Real.Location = new System.Drawing.Point(219, 23);
+            this.Real.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Real.Location = new System.Drawing.Point(281, 22);
             this.Real.Name = "Real";
-            this.Real.Size = new System.Drawing.Size(47, 17);
+            this.Real.Size = new System.Drawing.Size(54, 18);
             this.Real.TabIndex = 12;
             this.Real.TabStop = true;
             this.Real.Text = "Real";
@@ -192,78 +199,76 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 281);
+            this.label7.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(10, 172);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(143, 13);
+            this.label7.Size = new System.Drawing.Size(194, 14);
             this.label7.TabIndex = 13;
             this.label7.Text = "Data de Inicio de Atividades:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(19, 311);
+            this.label8.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(10, 210);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 13);
+            this.label8.Size = new System.Drawing.Size(68, 14);
             this.label8.TabIndex = 14;
             this.label8.Text = "Telefone:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 355);
+            this.label9.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(190, 213);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 13);
+            this.label9.Size = new System.Drawing.Size(103, 14);
             this.label9.TabIndex = 15;
             this.label9.Text = "Capital Social:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(657, 30);
+            this.label10.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(114, 252);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(103, 13);
+            this.label10.Size = new System.Drawing.Size(137, 14);
             this.label10.TabIndex = 16;
             this.label10.Text = "Endereço Completo:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(609, 66);
+            this.label11.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(80, 276);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(40, 13);
+            this.label11.Size = new System.Drawing.Size(52, 14);
             this.label11.TabIndex = 17;
             this.label11.Text = "Cidade";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(772, 66);
+            this.label12.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(243, 276);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(40, 13);
+            this.label12.Size = new System.Drawing.Size(50, 14);
             this.label12.TabIndex = 18;
             this.label12.Text = "Estado";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(654, 108);
+            this.label13.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(125, 318);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(106, 13);
+            this.label13.Size = new System.Drawing.Size(140, 14);
             this.label13.TabIndex = 19;
             this.label13.Text = "Rua, bairro e número";
             // 
-            // dataInicioAt
-            // 
-            this.dataInicioAt.Location = new System.Drawing.Point(160, 278);
-            this.dataInicioAt.Mask = "00/00/0000";
-            this.dataInicioAt.Name = "dataInicioAt";
-            this.dataInicioAt.Size = new System.Drawing.Size(64, 20);
-            this.dataInicioAt.TabIndex = 20;
-            this.dataInicioAt.ValidatingType = typeof(System.DateTime);
-            // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(79, 311);
+            this.maskedTextBox1.Location = new System.Drawing.Point(84, 207);
             this.maskedTextBox1.Mask = "(00) 00000-0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
@@ -271,7 +276,7 @@
             // 
             // capitalSocial
             // 
-            this.capitalSocial.Location = new System.Drawing.Point(92, 352);
+            this.capitalSocial.Location = new System.Drawing.Point(294, 210);
             this.capitalSocial.Name = "capitalSocial";
             this.capitalSocial.Size = new System.Drawing.Size(100, 20);
             this.capitalSocial.TabIndex = 22;
@@ -307,14 +312,14 @@
             "São Paulo (SP)",
             "Sergipe (SE)",
             "Tocantins (TO)"});
-            this.estado.Location = new System.Drawing.Point(733, 81);
+            this.estado.Location = new System.Drawing.Point(204, 291);
             this.estado.Name = "estado";
             this.estado.Size = new System.Drawing.Size(121, 21);
             this.estado.TabIndex = 23;
             // 
             // cidade
             // 
-            this.cidade.Location = new System.Drawing.Point(567, 82);
+            this.cidade.Location = new System.Drawing.Point(38, 292);
             this.cidade.Name = "cidade";
             this.cidade.Size = new System.Drawing.Size(117, 20);
             this.cidade.TabIndex = 24;
@@ -322,40 +327,43 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(562, 318);
+            this.label14.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(16, 378);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(92, 13);
+            this.label14.Size = new System.Drawing.Size(123, 14);
             this.label14.TabIndex = 25;
             this.label14.Text = "Natureza Juridica:";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(564, 371);
+            this.label16.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(18, 434);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(100, 13);
+            this.label16.Size = new System.Drawing.Size(138, 14);
             this.label16.TabIndex = 27;
             this.label16.Text = "CPF do proprietário:";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(548, 342);
+            this.label18.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(16, 405);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(108, 13);
+            this.label18.Size = new System.Drawing.Size(148, 14);
             this.label18.TabIndex = 29;
             this.label18.Text = "Nome do proprietário:";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(660, 342);
+            this.textBox3.Location = new System.Drawing.Point(163, 402);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(182, 20);
             this.textBox3.TabIndex = 31;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(567, 124);
+            this.textBox4.Location = new System.Drawing.Point(38, 334);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(287, 20);
             this.textBox4.TabIndex = 32;
@@ -363,9 +371,10 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.Location = new System.Drawing.Point(29, 23);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(53, 17);
+            this.radioButton1.Size = new System.Drawing.Size(67, 18);
             this.radioButton1.TabIndex = 34;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Matriz";
@@ -374,9 +383,10 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(110, 25);
+            this.radioButton2.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(106, 22);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(45, 17);
+            this.radioButton2.Size = new System.Drawing.Size(60, 18);
             this.radioButton2.TabIndex = 35;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Filial";
@@ -385,9 +395,10 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.Location = new System.Drawing.Point(6, 26);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(68, 17);
+            this.radioButton3.Size = new System.Drawing.Size(79, 18);
             this.radioButton3.TabIndex = 36;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Pequeno";
@@ -396,9 +407,10 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(80, 26);
+            this.radioButton4.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.Location = new System.Drawing.Point(87, 26);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(54, 17);
+            this.radioButton4.Size = new System.Drawing.Size(66, 18);
             this.radioButton4.TabIndex = 37;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Médio";
@@ -407,9 +419,10 @@
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(140, 26);
+            this.radioButton5.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton5.Location = new System.Drawing.Point(162, 26);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(60, 17);
+            this.radioButton5.Size = new System.Drawing.Size(70, 18);
             this.radioButton5.TabIndex = 38;
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Grande";
@@ -422,14 +435,14 @@
             "EI - Empresário Individual",
             "MEI - Microempreendedor Individual",
             "Sociedade Anônima"});
-            this.comboBox1.Location = new System.Drawing.Point(660, 315);
+            this.comboBox1.Location = new System.Drawing.Point(139, 375);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(164, 21);
             this.comboBox1.TabIndex = 39;
             // 
             // cpf
             // 
-            this.cpf.Location = new System.Drawing.Point(660, 368);
+            this.cpf.Location = new System.Drawing.Point(155, 431);
             this.cpf.Mask = "000,000,000-00";
             this.cpf.Name = "cpf";
             this.cpf.Size = new System.Drawing.Size(84, 20);
@@ -437,7 +450,8 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(775, 423);
+            this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(764, 351);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 45);
             this.button1.TabIndex = 41;
@@ -449,7 +463,8 @@
             // 
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(567, 150);
+            this.groupBox1.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(550, 124);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(318, 62);
             this.groupBox1.TabIndex = 42;
@@ -462,7 +477,8 @@
             this.groupBox2.Controls.Add(this.radioButton3);
             this.groupBox2.Controls.Add(this.radioButton4);
             this.groupBox2.Controls.Add(this.radioButton5);
-            this.groupBox2.Location = new System.Drawing.Point(570, 230);
+            this.groupBox2.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(550, 202);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(284, 64);
             this.groupBox2.TabIndex = 43;
@@ -474,16 +490,18 @@
             this.groupBox3.Controls.Add(this.SimplesNacional);
             this.groupBox3.Controls.Add(this.LucroPresumido);
             this.groupBox3.Controls.Add(this.Real);
-            this.groupBox3.Location = new System.Drawing.Point(12, 201);
+            this.groupBox3.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(550, 53);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(348, 51);
+            this.groupBox3.Size = new System.Drawing.Size(362, 51);
             this.groupBox3.TabIndex = 44;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Regime Tributário";
             // 
             // novo
             // 
-            this.novo.Location = new System.Drawing.Point(622, 423);
+            this.novo.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.novo.Location = new System.Drawing.Point(538, 351);
             this.novo.Name = "novo";
             this.novo.Size = new System.Drawing.Size(148, 45);
             this.novo.TabIndex = 46;
@@ -491,11 +509,19 @@
             this.novo.UseVisualStyleBackColor = true;
             this.novo.Click += new System.EventHandler(this.novo_Click);
             // 
+            // dataIni
+            // 
+            this.dataIni.Location = new System.Drawing.Point(206, 168);
+            this.dataIni.Name = "dataIni";
+            this.dataIni.Size = new System.Drawing.Size(225, 20);
+            this.dataIni.TabIndex = 47;
+            // 
             // CadastroEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(949, 508);
+            this.Controls.Add(this.dataIni);
             this.Controls.Add(this.novo);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -512,7 +538,6 @@
             this.Controls.Add(this.estado);
             this.Controls.Add(this.capitalSocial);
             this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.dataInicioAt);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -530,7 +555,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "CadastroEmpresa";
-            this.Text = " ";
+            this.Text = " Cadastro Empresa";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -563,7 +588,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.MaskedTextBox dataInicioAt;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.TextBox capitalSocial;
         private System.Windows.Forms.ComboBox estado;
@@ -585,5 +609,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button novo;
+        private System.Windows.Forms.DateTimePicker dataIni;
     }
 }

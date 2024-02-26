@@ -18,6 +18,67 @@ namespace CadastroEmpresa
         {
             InitializeComponent();
         }
+        private bool ValidarForm()
+        {
+            bool FormValido;
+            if (cnpj.Text == "")
+            {
+                FormValido = false;
+            }
+            else if (razaoSocial.Text == "")
+            {
+                FormValido = false;
+            }
+            else if (nomeFantasia.Text == "")
+            {
+                FormValido = false;
+            }
+            else if (situacaoCadastral.Text == "")
+            {
+                FormValido = false;
+            }
+            else if (dataIni.Text == "")
+            {
+                FormValido = false;
+            }
+            else if (maskedTextBox1.Text == "(  )      -")
+            {
+                FormValido = false;
+            }
+            else if (capitalSocial.Text == "")
+            {
+                FormValido = false;
+            }
+            else if (cidade.Text == "")
+            {
+                FormValido = false;
+            }
+            else if (estado.Text == "")
+            {
+                FormValido = false;
+            }
+            else if (textBox4.Text == "")
+            {
+                FormValido = false;
+            }
+            else if (comboBox1.Text == "")
+            {
+                FormValido = false;
+            }
+            else if (textBox3.Text == "")
+            {
+                FormValido = false;
+            }
+
+
+
+
+            else
+            {
+                FormValido = true;
+            }
+            return FormValido;
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -28,7 +89,7 @@ namespace CadastroEmpresa
                 string NomeFantasia = nomeFantasia.Text;
                 string SituacaoCadastral = situacaoCadastral.Text;
                 string Regimetributario = "";
-                string DataInicioAt = dataInicioAt.Text;
+                string DataInicioAt = dataIni.Text;
                 string MaskedTextBox1 = maskedTextBox1.Text;
                 double CapitalSocial = Convert.ToDouble(capitalSocial.Text);
                 string Cidade = cidade.Text;
@@ -82,21 +143,28 @@ namespace CadastroEmpresa
                     PorteEmpresa = radioButton5.Text;
                 }
 
-                if (Validacao.ValidaCpf(Cpf))
+                if (ValidarForm())
                 {
-                    MessageBox.Show($"{Cnpj}\n{RazaoSocial}\n{NomeFantasia}\n{SituacaoCadastral}\n{Regimetributario}\n{DataInicioAt}\n" +
-                        $"{MaskedTextBox1}\n{CapitalSocial}\n{Cidade}\n{Estado}\n{TextBox4}\n{TipoEmpresa}\n{PorteEmpresa}\n{ComboBox1}\n{TextBox3}\n{Cpf}");
+                    if (Validacao.ValidaCpf(Cpf))
+                    {
+                        MessageBox.Show($"{Cnpj}\n{RazaoSocial}\n{NomeFantasia}\n{SituacaoCadastral}\n{Regimetributario}\n{DataInicioAt}\n" +
+                            $"{MaskedTextBox1}\n{CapitalSocial}\n{Cidade}\n{Estado}\n{TextBox4}\n{TipoEmpresa}\n{PorteEmpresa}\n{ComboBox1}\n{TextBox3}\n{Cpf}");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cpf invalido");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Cpf invalido");
+                    MessageBox.Show("Preencha todos os campos!");
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Ocorreu uma exceção: " + ex.Message);
             }
-    
+
 
         }
 
@@ -110,7 +178,7 @@ namespace CadastroEmpresa
             cnpj.Clear();
             razaoSocial.Clear();
             nomeFantasia.Clear();
-            dataInicioAt.Clear();
+            dataIni.ResetText();
             maskedTextBox1.Clear();
             capitalSocial.Clear();
             cidade.Clear();
@@ -121,5 +189,22 @@ namespace CadastroEmpresa
             estado.ResetText();
             situacaoCadastral.ResetText();
         }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CadastroEmpresa_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
